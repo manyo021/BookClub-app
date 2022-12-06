@@ -128,6 +128,7 @@ namespace BookClub_app.Services.BookService
 
                     await _context.SaveChangesAsync();
                     response.Data = _mapper.Map<GetBookDto>(book);
+                    response.Message = "Character saved successfully";
                 }
                 else
                 {
